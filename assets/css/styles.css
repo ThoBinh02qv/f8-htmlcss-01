@@ -151,14 +151,25 @@ a {
     margin-top: 23px;
 }
 
-.clients .images {
+.clients .content .images {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 96px;
+    margin-top: 70px;
     margin-bottom: 66px;
 }
 
+.clients .content .images a {
+    display: flex;
+    align-items: center;
+    padding: 0 42px;
+    height: 90px;
+    text-align: center;
+    border-radius: 12px;
+}
+.clients .images a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
 /* ======== Guides========= */
 
 .guides {
@@ -589,7 +600,7 @@ a {
 }
 .footer .column .social {
     margin-top: 40px;
-    display: flex; 
+    display: flex;
 }
 .footer .row-bottom {
     margin-top: 81px;
@@ -607,5 +618,5 @@ a {
 }
 
 .footer .social-link:hover {
-    background: #ebebeb ;
+    background: #ebebeb;
 }
