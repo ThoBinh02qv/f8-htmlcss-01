@@ -14,7 +14,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins";
-    width: ;
 }
 /* common */
 .btn {
@@ -304,7 +303,8 @@ a {
 }
 
 .featured .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -384,6 +384,7 @@ a {
 .stats .img-block,
 .stats .info {
     width: 50%;
+    position: relative;
 }
 
 .stats .info {
@@ -428,8 +429,9 @@ a {
     background: #000339;
 }
 .stats .stats-trend {
-    position: relative;
-    top: -460px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 239px;
     height: 252px;
     background: #fff;
@@ -503,7 +505,7 @@ a {
 /* ==============Quantity: Số lượng=============== */
 
 .stats .row-qty {
-    /* margin-top: 110px; */
+    margin-top: 230px;
     justify-content: space-between;
     padding: 0 32px;
 }
@@ -584,8 +586,9 @@ a {
     padding: 50px 0 58px 0;
 }
 .footer .content .row {
-    display: flex;
-    gap: 185px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 185px;
 }
 .footer .column .heading {
     color: #1c1c1d;
